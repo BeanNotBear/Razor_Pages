@@ -1,7 +1,14 @@
-﻿@page
+﻿@page "/Trang"
 @model Razor_Pages.Pages.FirstPageModel
 @{
 }
 
 <h1>First page</h1>
+<h3>Date</h3>
+<p>@System.DateTime.Now;</p>
 
+@{
+    var a = 10;
+}
+
+<p>Square root of @a is @Math.Sqrt(a);</p>
